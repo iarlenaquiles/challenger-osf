@@ -11,17 +11,21 @@
 </head>
 
 <body>
-  <div class="container col-12 center-block">
-    <img src="../public/imgs/osf.png" class="img-responsive" />
-    <h3>Search Contact</h3>
-    <form action="#" id="search-form">
-      <div class="form-group">
-        <input id="id" type="text" class="form-control" placeholder="Type contact Id..." name="id" required>
+  <div class="jumbotron">
+    <div class="container col-12 center-block">
+      <div class="text-center">
+        <img src="../public/imgs/osf.png" class="img-responsive" />
       </div>
-      <div class="form-group">
-        <button class="btn btn-primary search btn-lg btn-block" type="submit">Search</button>
-      </div>
-    </form>
+      <h3>Search Contact</h3>
+      <form action="#" id="search-form">
+        <div class="form-group">
+          <input id="id" type="text" class="form-control" placeholder="Type contact Id..." name="id" required>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary search btn-lg btn-block" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
   </div>
   <script type="text/javascript">
     $('#search-form').submit(function () {

@@ -8,43 +8,46 @@
 </head>
 
 <body>
-  <div class="container">
-    <img src="/public/imgs/osf.png" class="img-responsive" />
-    <h1>Update Contact</h1>
-    <h3><a class="btn btn-primary" href="/contacts">Contacts List</a></h3>
-    <form action="/contacts/<%=contact._id%>/update" method="post">
-      <h2>Contact</h2>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" name="name" class="form-control" placeholder="Digite seu nome" value="<%=contact.name%>">
+  <div class="jumbotron">
+    <div class="container">
+      <div class="text-center">
+        <img src="/public/imgs/osf.png" class="img-responsive" />
       </div>
+      <h1>Update Contact</h1>
+      <h3><a class="btn btn-primary" href="/contacts">Contacts List</a></h3>
+      <form action="/contacts/<%=contact._id%>/update" method="post">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="form-control" placeholder="Digite seu nome" value="<%=contact.name%>">
+        </div>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" name="email" class="form-control" placeholder="Digite seu email" value="<%=contact.email%>">
-        <small class="form-text text-muted">Digite um email válido</small>
-      </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" class="form-control" placeholder="Digite seu email" value="<%=contact.email%>">
+          <small class="form-text text-muted">Digite um email válido</small>
+        </div>
 
-      <div class="form-group">
-        <label for="email">Gender</label>
-        <select name="gender" class="form-control">
-          <option value="<%=contact.gender%>">
-            <%=contact.gender%>
-          </option>
-          <option value="male">Male</option>
-          <option value="female">Famele</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+        <div class="form-group">
+          <label for="email">Gender</label>
+          <select name="gender" class="form-control">
+            <option value="<%=contact.gender%>">
+              <%=contact.gender%>
+            </option>
+            <option value="male">Male</option>
+            <option value="female">Famele</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
 
-      <div class="form-group">
-        <label for="email">Phone</label>
-        <input type="text" name="phone" class="form-control" placeholder="Digite seu phone" value="<%=contact.phone%>">
-      </div>
+        <div class="form-group">
+          <label for="email">Phone</label>
+          <input type="text" name="phone" class="form-control" placeholder="Digite seu phone" value="<%=contact.phone%>">
+        </div>
 
 
-      <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
-    </form>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+      </form>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
