@@ -18,13 +18,13 @@
       <form action="/contacts/<%=contact._id%>/update" method="post">
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" name="name" class="form-control" placeholder="Digite seu nome" value="<%=contact.name%>">
+          <input type="text" name="name" class="form-control" placeholder="Type your name" value="<%=contact.name%>" />
         </div>
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" name="email" class="form-control" placeholder="Digite seu email" value="<%=contact.email%>">
-          <small class="form-text text-muted">Digite um email válido</small>
+          <input type="email" name="email" class="form-control" placeholder="Type your email" value="<%=contact.email%>">
+          <small class="form-text text-muted">Type an email valid</small>
         </div>
 
         <div class="form-group">
@@ -41,11 +41,11 @@
 
         <div class="form-group">
           <label for="email">Phone</label>
-          <input type="text" name="phone" class="form-control" placeholder="Digite seu phone" value="<%=contact.phone%>">
+          <input type="text" name="phone" class="form-control" placeholder="Type your phone" value="<%=contact.phone%>">
         </div>
 
 
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Update</button>
       </form>
     </div>
   </div>
